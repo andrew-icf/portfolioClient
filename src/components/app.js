@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './navbar.js';
 import HeaderImg from './headerImg';
+import Aboutme from './aboutme';
+import Footer from './footer';
 
 export default class App extends Component {
   render() {
@@ -8,6 +10,8 @@ export default class App extends Component {
         <div>
             <Navbar />
             <HeaderImg />
+            <Aboutme />
+            <Footer />
         </div>
     );
   }

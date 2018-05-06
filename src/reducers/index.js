@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import ContactInfoReducer from './reducer_contactInfo';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  info: ContactInfoReducer
 });
 
 export default rootReducer;

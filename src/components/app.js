@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+
 import Navbar from './navbar.js';
 import HeaderImg from './headerImg';
 import Aboutme from './aboutme';
-import Footer from '../containers/footer';
+import Footer from './footer';
+import Weather from '../weather/weather';
 
 export default class App extends Component {
   render() {
@@ -12,6 +14,7 @@ export default class App extends Component {
             <HeaderImg />
             <Aboutme />
             <Footer />
+            <Weather />
         </div>
     );
   }

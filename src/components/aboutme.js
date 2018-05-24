@@ -4,7 +4,7 @@ export default class Aboutme extends Component {
     render () {
         return (
             <div>
-                <div className="aboutme"><h1>About me</h1></div>
+                <div className="aboutme" id='aboutMe'><h1>About me</h1></div>
                 <div className="aboutMeCard">
                     <h3>Travel</h3>
                     <p>Traveling is the most amazing thing I've ever experieced. Throwing myself in an unfamiliar place with no idea of what anything is, and experiencing that cutlure, helps me grow, learn and discover more about myself than I ever thought possible. </p>
@@ -13,7 +13,7 @@ export default class Aboutme extends Component {
                 <div className="aboutMeCard">
                     <h3>Family</h3>
                     <p>I wouldn't be where I am today without the support and love of my family and friends.  </p>
-                    <img src="../../img/friendsAndFam.jpg" />
+                    <img src="../../img/famjam.jpg" />
                 </div>
                 <div className="aboutMeCard">
                     <h3>Fitness</h3>

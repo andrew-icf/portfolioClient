@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './navbar.js';
 import HeaderImg from './headerImg';
@@ -9,13 +10,19 @@ import Weather from '../weather/weather';
 export default class App extends Component {
   render() {
     return (
-        <div>
-            <Navbar />
-            <HeaderImg />
-            <Aboutme />
-            <Footer />
-            <Weather />
-        </div>
+        <Router>
+            <div>
+                <Navbar className='wholeScreen' />
+                <HeaderImg className='wholeScreen' />
+                <div>
+                    <Switch>
+                        <Route path='/' component={ Aboutme } exact={true} />
+                        <Route path='/projects' component={ Weather } exact={true} />
+                    </Switch>
+                </div>
+                <Footer />
+            </div>
+        </Router>
     );
   }
 }

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Navbar from './navbar.js';
-import HeaderImg from './headerImg';
-import Aboutme from './aboutme';
+import Home from './home';
+import Navbar from './navbar';
 import Footer from './footer';
-import Weather from '../weather/weather';
+import Projects from './projects'
+import PageNotFound from './pageNotFound';
 
 export default class App extends Component {
   render() {
@@ -13,11 +13,11 @@ export default class App extends Component {
         <Router>
             <div>
                 <Navbar className='wholeScreen' />
-                <HeaderImg className='wholeScreen' />
                 <div>
                     <Switch>
-                        <Route path='/' component={ Aboutme } exact={true} />
-                        <Route path='/projects' component={ Weather } exact={true} />
+                        <Route path='/' component={ Home } exact={true} />
+                        <Route path='/projects' component={ Projects } exact={true} />
+                        <Route component={ PageNotFound } exact={true} />
                     </Switch>
                 </div>
                 <Footer />

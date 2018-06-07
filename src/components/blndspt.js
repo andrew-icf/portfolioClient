@@ -5,16 +5,11 @@ export default class Blndspt extends Component {
     return (
       <div>
         <h3>Blndspt.com</h3>
-        <div className='blndspt'>
-          <p>I have been a dedicated resource for Hawaiian Airlines and the release of their mobile application.</p>
-          <table>
-            <tr>
-              <th><img src='../../img/HA.png' /></th>
-            </tr>
-            <tr>
-              <td><p>I have been working with the developers automating and creating the tests for the new API.</p></td>
-            </tr>
-          </table>
+        <div>
+          <section className='blndspt clearfix'>
+              <img src='../../img/HA.png' />
+              <p>I have been a dedicated resource for Hawaiian Airlines and the release of their mobile application. I have been working with the developers automating and creating the tests for the new API.</p>
+          </section>
         </div>
       </div>
     );

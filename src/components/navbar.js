@@ -21,7 +21,7 @@ export default class Navbar extends Component {
                     <a className="nav-link" href="#footer">Contact</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="../../static/Andrew'sResume.pdf"><strong>Download Resume</strong></a>
+                    <a className="nav-link" href="../../static/AndrewVandermeerResume.pdf" target='_blank'><strong>Download Resume</strong></a>
                   </li>
                 </ul>
                 </div>

@@ -9,6 +9,7 @@ import PageNotFound from './pageNotFound';
 
 export default class App extends Component {
   render() {
+    const transition = true;
     return (
         <Router>
             <div>
